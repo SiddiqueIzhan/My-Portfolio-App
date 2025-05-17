@@ -22,7 +22,7 @@ const Home = ({ text, speed = 150 }) => {
       <img
         src="\cover-photo.jpg"
         alt="Cover Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-40 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
       />
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between text-left mt-64 md:mt-0 md:gap-16">
         {/* Left Section with Typing Animation */}
