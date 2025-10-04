@@ -17,6 +17,12 @@ const projects = [
       "Swiggy-inspired app with mobile-first design, carousel animations, and optimized performance.",
     link: "https://my-food-delivery-app.netlify.app/",
   },
+  {
+    title: "Dice Game App",
+    image: "/project image 3.png",
+    description: "Software tool used for casual gaming",
+    link: "https://dice-game-app1.netlify.app/",
+  },
 ];
 
 const Projects = () => {

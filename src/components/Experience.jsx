@@ -33,6 +33,15 @@ const Experience = () => {
           collaborated with cross-functional teams, used Storybook, GitHub
           Copilot, REST APIs, and built admin dashboards.
         </li>
+        <li className="text-center text-xl leading-10">
+          <strong className="lg:text-3xl text-2xl">
+            Application Engineer – Medibuddy (May 2025 – Oct 2025)
+          </strong>
+          <br />
+          Designed an MER PDF for medical insurance, uploaded annual health
+          checkup data on AWS S3, Resolved design and security related bugs like
+          XSS
+        </li>
       </motion.ul>
     </section>
   );

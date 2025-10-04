@@ -1,5 +1,12 @@
 import React from "react";
-import { FaHtml5, FaJs, FaReact, FaSass, FaGitAlt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaSass,
+  FaGitAlt,
+  FaNodeJs,
+} from "react-icons/fa";
 import {
   SiNextdotjs,
   SiRedux,
@@ -59,6 +66,10 @@ const skills = [
   {
     name: "Git",
     icon: <FaGitAlt className="text-red-500 group-hover:text-red-400" />,
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs className="text-[#68a063] group-hover:text-green-400" />,
   },
 ];
 
