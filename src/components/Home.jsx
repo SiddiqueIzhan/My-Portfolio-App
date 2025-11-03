@@ -20,10 +20,9 @@ const Home = ({ text, speed = 150 }) => {
       className="max-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-12 relative overflow-hidden"
     >
       <img
-        src="\cover-photo.jpg"
+        src="\cover-photo.webp"
         alt="Cover Background"
-        loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-50 z-0"
       />
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between text-left mt-64 md:mt-0 md:gap-16">
         {/* Left Section with Typing Animation */}
@@ -39,7 +38,7 @@ const Home = ({ text, speed = 150 }) => {
             </span>
           </h1>
           <p className="max-w-xl mt-4 text-sm sm:text-base md:text-lg">
-            Front-End Developer with 1+ years of experience building responsive,
+            Front-End Developer with 2+ years of experience building responsive,
             high-performance web apps using React.js and Next.js. Skilled in
             crafting seamless UX, optimizing performance, and collaborating in
             agile teams.
