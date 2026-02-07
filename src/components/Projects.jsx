@@ -23,6 +23,12 @@ const projects = [
     description: "Software tool used for casual gaming",
     link: "https://dice-game-app1.netlify.app/",
   },
+  {
+    title: "MERN Chat App",
+    image: "/chat-app-image.png",
+    description: "sofytware tool to communicate one-on-on and groups",
+    link: "https://mern-chat-app-9plp.onrender.com/",
+  },
 ];
 
 const Projects = () => {

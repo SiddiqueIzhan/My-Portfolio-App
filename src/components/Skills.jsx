@@ -14,9 +14,12 @@ import {
   SiTypescript,
   SiFirebase,
   SiBootstrap,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { sectionVariants } from "../App";
+import { TbBrandMysql } from "react-icons/tb";
 
 const skills = [
   {
@@ -68,9 +71,21 @@ const skills = [
     icon: <FaGitAlt className="text-red-500 group-hover:text-red-400" />,
   },
   {
-    name: "Node.js",
-    icon: <FaNodeJs className="text-[#68a063] group-hover:text-green-400" />,
-  },
+  name: "Node.js",
+  icon: <FaNodeJs className="text-[#339933] group-hover:text-[#3ccf4e]" />,
+},
+{
+  name: "Express.js",
+  icon: <SiExpress className="text-[#000000] group-hover:text-[#444444]" />,
+},
+{
+  name: "MongoDB",
+  icon: <SiMongodb className="text-[#47A248] group-hover:text-[#4DBB5F]" />,
+},
+{
+  name: "SQL",
+  icon: <TbBrandMysql className="text-[#00758F] group-hover:text-[#F29111]" />,
+},
 ];
 
 const Skills = () => {
