@@ -4,9 +4,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
   return (
-    <nav className="p-4 bg-gray-800 shadow fixed w-full z-20 top-0 flex flex-wrap justify-between items-center gap-y-2">
+    <nav className="p-4 bg-gray-800 shadow fixed w-full z-20 top-0 flex flex-wrap justify-between items-center gap-y-2 md:px-24">
       <div className="font-bold text-xl text-white">Izhan</div>
-      <div className="hidden md:flex gap-4 md:gap-8">
+      <div className="hidden md:flex gap-4 md:gap-12 items-center">
         {["Home", "Skills", "Projects", "Experience", "Education"].map(
           (item) => (
             <div
@@ -16,10 +16,30 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
             >
               {item}
             </div>
-          )
+          ),
         )}
+        <a
+          href="/resume.pdf"
+          download="Siddique_Izhan_Resume_Frontend_Dev.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-blue-500 text-white py-1.5 px-3 rounded-lg hover:bg-white hover:text-blue-500 duration-500 font-semibold">
+            Download Resume
+          </button>
+        </a>
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden flex items-center gap-4">
+        <a
+          href="/resume.pdf"
+          download="Siddique_Izhan_Resume_Frontend_Dev.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-blue-500 text-white py-1.5 px-3 rounded-lg hover:bg-white hover:text-blue-500 duration-500 font-semibold">
+            Download Resume
+          </button>
+        </a>
         <button onClick={() => setSidebarOpen(true)}>
           <FaBars size={24} />
         </button>
@@ -46,7 +66,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
             >
               {item}
             </div>
-          )
+          ),
         )}
       </motion.div>
     </nav>
