@@ -6,6 +6,8 @@ import {
   FaSass,
   FaGitAlt,
   FaNodeJs,
+  FaBitbucket,
+  FaJira,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -16,6 +18,9 @@ import {
   SiBootstrap,
   SiExpress,
   SiMongodb,
+  SiShadcnui,
+  SiClerk,
+  SiPrisma,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { sectionVariants } from "../App";
@@ -71,21 +76,43 @@ const skills = [
     icon: <FaGitAlt className="text-red-500 group-hover:text-red-400" />,
   },
   {
-  name: "Node.js",
-  icon: <FaNodeJs className="text-[#339933] group-hover:text-[#3ccf4e]" />,
-},
-{
-  name: "Express.js",
-  icon: <SiExpress className="text-[#000000] group-hover:text-[#444444]" />,
-},
-{
-  name: "MongoDB",
-  icon: <SiMongodb className="text-[#47A248] group-hover:text-[#4DBB5F]" />,
-},
-{
-  name: "SQL",
-  icon: <TbBrandMysql className="text-[#00758F] group-hover:text-[#F29111]" />,
-},
+    name: "Node.js",
+    icon: <FaNodeJs className="text-[#339933] group-hover:text-[#3ccf4e]" />,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="text-[#000000] group-hover:text-[#444444]" />,
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb className="text-[#47A248] group-hover:text-[#4DBB5F]" />,
+  },
+  {
+    name: "SQL",
+    icon: (
+      <TbBrandMysql className="text-[#00758F] group-hover:text-[#F29111]" />
+    ),
+  },
+  {
+    name: "ShadCN",
+    icon: <SiShadcnui className="text-gray-100 group-hover:text-white" />,
+  },
+  {
+    name: "clerk",
+    icon: <SiClerk className="text-purple-500 group-hover:text-purple-400" />,
+  },
+  {
+    name: "prisma",
+    icon: <SiPrisma className="text-teal-400 group-hover:text-teal-300" />,
+  },
+  {
+    name: "bitbucket",
+    icon: <FaBitbucket className="text-blue-500 group-hover:text-blue-400" />,
+  },
+  {
+    name: "JIRA",
+    icon: <FaJira className="text-blue-500 group-hover:text-blue-400" />,
+  },
 ];
 
 const Skills = () => {

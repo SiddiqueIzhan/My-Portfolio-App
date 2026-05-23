@@ -26,8 +26,15 @@ const projects = [
   {
     title: "MERN Chat App",
     image: "/chat-app-image.png",
-    description: "sofytware tool to communicate one-on-on and groups",
+    description: "software tool to communicate one-on-on and groups",
     link: "https://mern-chat-app-9plp.onrender.com/",
+  },
+  {
+    title: "Doctor Appointment Platform",
+    image: "/doctor-appointment-app.png",
+    description:
+      "Book Appointments, Consult via video, and manage your healthcare journey all in secure platform",
+    link: "https://doctors-appointment-mesfewyu1-izhanvkgmailcoms-projects.vercel.app/",
   },
 ];
 
