@@ -20,7 +20,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
         )}
         <a
           href="/resume.pdf"
-          download="Siddique_Izhan_Resume_Frontend_Dev.pdf"
+          download="Siddique_Izhan_VK_FRONTEND_RESUME.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +32,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
       <div className="md:hidden flex items-center gap-4">
         <a
           href="/resume.pdf"
-          download="Siddique_Izhan_Resume_Frontend_Dev.pdf"
+          download="Siddique_Izhan_VK_FRONTEND_RESUME.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

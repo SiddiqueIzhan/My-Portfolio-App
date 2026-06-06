@@ -38,7 +38,7 @@ const Home = ({ text, speed = 150 }) => {
             </span>
           </h1>
           <p className="max-w-xl mt-4 text-sm sm:text-base md:text-lg">
-            Front-End Developer with 2+ years of experience building responsive,
+            Front-End Developer with almost 3 years of experience building responsive,
             high-performance web apps using React.js and Next.js. Skilled in
             crafting seamless UX, optimizing performance, and collaborating in
             agile teams.

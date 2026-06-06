@@ -8,8 +8,8 @@ const ExperienceData = [
     companyName: `./chingari-app-icon.webp`,
     jobTitle: "Software Development Engineer",
     location: "Bangalore, Karnataka",
-    start: "Sept 2023",
-    end: "Feb 2025",
+    start: "Jun 2023",
+    end: "May 2025",
     jobDesc: [
       "Built and optimized scalable web apps using React.js, Next.js,and TypeScript, improving performance by 20%.",
       "Developed admin dashboards and reusable components using Tailwind CSS and SASS.",
