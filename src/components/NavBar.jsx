@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import resume from "../../public/Siddique_Izhan_VK_FRONTEND_RESUME.pdf";
 
 const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
   return (
@@ -19,7 +20,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
           ),
         )}
         <a
-          href="/resume.pdf"
+          href={resume}
           download="Siddique_Izhan_VK_FRONTEND_RESUME.pdf"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +32,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
       </div>
       <div className="md:hidden flex items-center gap-4">
         <a
-          href="/resume.pdf"
+          href={resume}
           download="Siddique_Izhan_VK_FRONTEND_RESUME.pdf"
           target="_blank"
           rel="noopener noreferrer"
