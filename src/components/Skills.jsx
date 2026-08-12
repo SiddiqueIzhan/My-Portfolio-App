@@ -1,158 +1,51 @@
-import React from "react";
-import {
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaSass,
-  FaGitAlt,
-  FaNodeJs,
-  FaBitbucket,
-  FaJira,
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiRedux,
-  SiTailwindcss,
-  SiTypescript,
-  SiFirebase,
-  SiBootstrap,
-  SiExpress,
-  SiMongodb,
-  SiShadcnui,
-  SiClerk,
-  SiPrisma,
-} from "react-icons/si";
-import { motion } from "framer-motion";
-import { sectionVariants } from "../App";
-import { TbBrandMysql } from "react-icons/tb";
-
+import SectionHeading from "./SectionHeading";
 const skills = [
-  {
-    name: "HTML5",
-    icon: <FaHtml5 className="text-orange-600 group-hover:text-orange-500" />,
-  },
-  {
-    name: "JavaScript",
-    icon: <FaJs className="text-yellow-400 group-hover:text-yellow-300" />,
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript className="text-blue-500 group-hover:text-blue-400" />,
-  },
-  {
-    name: "React.js",
-    icon: <FaReact className="text-cyan-400 group-hover:text-cyan-300" />,
-  },
-  {
-    name: "Next.js",
-    icon: <SiNextdotjs className="text-gray-100 group-hover:text-white" />,
-  },
-  {
-    name: "Redux",
-    icon: <SiRedux className="text-purple-500 group-hover:text-purple-400" />,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-teal-400 group-hover:text-teal-300" />,
-  },
-  {
-    name: "Bootstrap",
-    icon: (
-      <SiBootstrap className="text-indigo-500 group-hover:text-indigo-400" />
-    ),
-  },
-  {
-    name: "SASS",
-    icon: <FaSass className="text-pink-400 group-hover:text-pink-300" />,
-  },
-  {
-    name: "Firebase",
-    icon: (
-      <SiFirebase className="text-yellow-500 group-hover:text-yellow-400" />
-    ),
-  },
-  {
-    name: "Git",
-    icon: <FaGitAlt className="text-red-500 group-hover:text-red-400" />,
-  },
-  {
-    name: "Node.js",
-    icon: <FaNodeJs className="text-[#339933] group-hover:text-[#3ccf4e]" />,
-  },
-  {
-    name: "Express.js",
-    icon: <SiExpress className="text-[#000000] group-hover:text-[#444444]" />,
-  },
-  {
-    name: "MongoDB",
-    icon: <SiMongodb className="text-[#47A248] group-hover:text-[#4DBB5F]" />,
-  },
-  {
-    name: "SQL",
-    icon: (
-      <TbBrandMysql className="text-[#00758F] group-hover:text-[#F29111]" />
-    ),
-  },
-  {
-    name: "ShadCN",
-    icon: <SiShadcnui className="text-gray-100 group-hover:text-white" />,
-  },
-  {
-    name: "clerk",
-    icon: <SiClerk className="text-purple-500 group-hover:text-purple-400" />,
-  },
-  {
-    name: "prisma",
-    icon: <SiPrisma className="text-teal-400 group-hover:text-teal-300" />,
-  },
-  {
-    name: "bitbucket",
-    icon: <FaBitbucket className="text-blue-500 group-hover:text-blue-400" />,
-  },
-  {
-    name: "JIRA",
-    icon: <FaJira className="text-blue-500 group-hover:text-blue-400" />,
-  },
+  ["JavaScript", 90],
+  ["React.js", 85],
+  ["Next.js", 80],
+  ["Tailwind CSS", 85],
+  ["TypeScript", 75],
+  ["Redux", 75],
+  ["Node.js & Express", 60],
+  ["MongoDB & SQL", 60],
 ];
-
-const Skills = () => {
+export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="py-12 pt-24 px-4 sm:px-6 md:px-12 min-h-lvh"
-    >
-      <motion.h2
-        className="text-2xl sm:text-3xl font-semibold text-center mb-8"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        Skills
-      </motion.h2>
-      <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="group bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300 text-center w-full max-w-[160px] hover:shadow-xl flex flex-col items-center"
-          >
-            <div className="text-3xl sm:text-4xl md:text-5xl mx-auto transition-colors duration-300">
-              {skill.icon}
+    <section id="skills" className="reveal py-20">
+      <SectionHeading eyebrow="What I bring" title="Skills & Certifications" />
+      <div className="grid gap-x-[50px] gap-y-[26px] md:grid-cols-2">
+        {skills.map(([name, value]) => (
+          <div key={name}>
+            <div className="mb-2 flex justify-between text-sm ">
+              <span className="font-semibold">{name}</span>
+              <span className="font-semibold text-accent">{value}%</span>
             </div>
-            <p className="mt-2 font-medium text-sm sm:text-base md:text-lg group-hover:text-white transition-colors">
-              {skill.name}
-            </p>
+            <div className="h-2 overflow-hidden rounded-full bg-surface-2">
+              <div
+                className="h-full rounded-full bg-warm-gradient"
+                style={{ width: `${value}%` }}
+              />
+            </div>
           </div>
         ))}
-      </motion.div>
+      </div>
+      <p className="mb-[18px] mt-10 text-sm text-muted">
+        No certifications added yet — drop in your real ones and I&apos;ll turn
+        these into filled cards.
+      </p>
+      <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-3">
+        {[1, 2].map((card) => (
+          <div
+            className="grid aspect-[4/3] place-items-center rounded-[14px] border-2 border-dashed border-cream/10 text-center text-sm text-muted"
+            key={card}
+          >
+            <div>
+              <span className="block text-2xl text-accent">+</span>Add
+              certification
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
-};
-
-export default Skills;
+}

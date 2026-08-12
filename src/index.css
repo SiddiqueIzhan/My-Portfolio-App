@@ -1,5 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream font-body text-cream antialiased;
+  }
+  ::selection {
+    @apply bg-accent text-canvas;
+  }
+  :focus-visible {
+    outline: 2px solid #d9a15c;
+    outline-offset: 3px;
+  }
+}
 
+@layer components {
+  .page-wrap {
+    @apply mx-auto max-w-[1160px] px-6 sm:px-10;
+  }
+  .gradient-text {
+    @apply bg-warm-gradient bg-clip-text text-transparent;
+  }
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.1em] text-accent;
+  }
+  .section-title {
+    @apply mt-2 font-heading text-3xl font-extrabold sm:text-[2.4rem];
+  }
+  .reveal {
+    @apply translate-y-4 opacity-0 transition duration-700 ease-out;
+  }
+  .reveal.in-view {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
