@@ -12,8 +12,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\n\n${form.message}`,
     );
-    window.location.href =
-      `https://mail.google.com/mail/?view=cm&fs=1&to=izhanvk%40gmail.com&su=Portfolio%20Contact&body=${body}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=izhanvk%40gmail.com&su=Portfolio%20Contact&body=${body}`;
   };
   const update = (event) =>
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -26,7 +25,7 @@ export default function Contact() {
         eyebrow="Let's build something"
         title={
           <>
-            Contact <span className="gradient-text">With Me</span>
+            Connect <span className="gradient-text">With Me</span>
           </>
         }
         description="Feel free to reach out directly by email, or fill in the form and I'll get back to you."
