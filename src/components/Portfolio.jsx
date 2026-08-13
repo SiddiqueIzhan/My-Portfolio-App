@@ -43,7 +43,7 @@ const projects = [
 ];
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="reveal py-20">
+    <section id="portfolio" className="reveal pt-[120px]">
       <SectionHeading
         centered
         eyebrow="Selected work"

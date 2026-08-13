@@ -19,7 +19,7 @@ export default function Contact() {
   const fieldClass =
     "w-full rounded-[10px] border-0 bg-cream/90 px-4 py-[14px] text-sm text-surface placeholder:text-surface/60";
   return (
-    <section id="contact" className="reveal py-20">
+    <section id="contact" className="reveal pt-[120px]">
       <SectionHeading
         centered
         eyebrow="Let's build something"

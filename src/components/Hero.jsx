@@ -1,4 +1,4 @@
-import resume from "../../public/Siddique_Izhan_VK_FRONTEND_RESUME.pdf";
+import resume from "../../public/Siddique Izhan V K Full Stack Resume.pdf";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="grid items-center gap-12 py-[70px] pb-[90px] text-center lg:grid-cols-[1.1fr_1fr] lg:text-left"
+      className="grid items-center gap-12 pt-[120px] pb-[90px] text-center lg:grid-cols-[1.1fr_1fr] lg:text-left"
     >
       <div>
         <span className="mb-[18px] block text-xs font-semibold uppercase tracking-[0.12em] text-accent">
@@ -50,7 +50,7 @@ export default function Hero() {
         <a
           className="mt-8 inline-block rounded-full bg-warm-gradient px-[30px] py-[14px] font-heading text-sm font-bold text-canvas shadow-[0_14px_30px_rgba(180,99,43,0.35)] transition hover:-translate-y-[2px]"
           href={resume}
-          download="Siddique_Izhan_VK_FRONTEND_RESUME.pdf"
+          download="Siddique Izhan V K Full Stack Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -70,13 +70,13 @@ export default function Hero() {
 
           return (
             <a
-            key={name}
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={name}
-            className={`absolute z-20 grid size-11 place-items-center rounded-full bg-cream text-sm font-bold text-surface shadow-lg ${["right-[-2%] top-[36%]", "right-[-2%] top-[55%]", "right-[-2%] top-[74%]", "right-[9%] top-[91%]"][index]}`}
-          >
+              key={name}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={name}
+              className={`absolute z-20 grid size-11 place-items-center rounded-full bg-cream text-sm font-bold text-surface shadow-lg ${["right-[-2%] top-[36%]", "right-[-2%] top-[55%]", "right-[-2%] top-[74%]", "right-[9%] top-[91%]"][index]}`}
+            >
               <Icon className="size-5" aria-hidden="true" />
             </a>
           );

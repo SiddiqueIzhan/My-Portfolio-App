@@ -41,7 +41,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="reveal grid gap-11 py-20 md:grid-cols-2 md:gap-15"
+      className="reveal grid gap-11 pt-[120px] md:grid-cols-2 md:gap-15"
     >
       <Timeline title={["Academic", "Qualification"]} items={education} />
       <Timeline title={["Job", "Experience"]} items={jobs} />

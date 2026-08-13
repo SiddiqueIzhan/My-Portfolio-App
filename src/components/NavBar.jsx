@@ -7,7 +7,7 @@ const links = [
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 z-50 bg-canvas/85 backdrop-blur">
+    <nav className="w-full fixed top-0 z-50 bg-canvas/85 backdrop-blur">
       <div className="page-wrap flex items-center justify-between py-[22px]">
         <a
           href="#top"
